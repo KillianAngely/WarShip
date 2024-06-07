@@ -10,9 +10,11 @@ import UIKit
 
 class ManageGameController: UIViewController {
     var gamedata: [String: String]?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // Utilisation de if let pour un déballage optionnel sécurisé
         guard let gameMode = gamedata?["gameMode"] else {
@@ -39,4 +41,9 @@ class ManageGameController: UIViewController {
         }
         
     }
+    @IBAction func Play(_ sender: Any) {
+        let warGameScreen = (self.storyboard?.instantiateViewController(withIdentifier: "inGameController")) as! InGameController
+        self.navigationController?.pushViewController(warGameScreen, animated:true)
+        
     }
+}
