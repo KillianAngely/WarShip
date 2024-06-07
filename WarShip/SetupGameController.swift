@@ -28,6 +28,7 @@ class SetupGameController: UIViewController{
             "difficulty":difficulty
         ]
         var gameScreen = (self.storyboard?.instantiateViewController(withIdentifier: "GameController")) as! ManageGameController
+        gameScreen.gamedata = gameConfig
         self.navigationController?.pushViewController(gameScreen, animated:true)
     
     }
