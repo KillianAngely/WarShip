@@ -12,7 +12,7 @@ func chooseRandomCase(gridSize: Int) -> String {
     let column: [String]
     
     if gridSize == 6 {
-        row = [0, 1, 2, 3, 4, 5]
+        row = [0, 1, 2Ï, 3, 4, 5]
         column = ["A", "B", "C", "D", "E", "F"]
     } else {
         row = [0, 1, 2, 3, 4, 5, 6, 7, 8]
