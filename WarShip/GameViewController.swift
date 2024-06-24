@@ -1,9 +1,16 @@
+//
+//  GameViewController.swift
+//  WarShip
+//
+//  Created by killian on 07/06/2024.
+//
+
 import UIKit
 
 class GameViewController: UIViewController {
     var setupGameData: [String: Any]?
-    var bateaux: [String] = [] // Les positions des bateaux (format ["C2", "B3"])
-    var gridSize: Int = 6 // Taille de la grille par défaut
+    var bateaux: [String] = []
+    var gridSize: Int = 6
     
     let statusLabel: UILabel = {
         let label = UILabel()
@@ -18,12 +25,12 @@ class GameViewController: UIViewController {
         self.navigationItem.hidesBackButton = true
         
         guard let gridSize = setupGameData?["gridSize"] as? Int,
-              let ships = setupGameData?["ships"] as? [String] else {
+              let ships = setupGameData?["ships"] as? [[String: [String]]] else {
             return
         }
         
         self.gridSize = gridSize
-        self.bateaux = ships
+        self.bateaux = ships.flatMap { $0["ship"] ?? [] }
         
         // Ajouter l'étiquette de statut à la vue
         view.addSubview(statusLabel)
@@ -92,4 +99,3 @@ class GameViewController: UIViewController {
         }
     }
 }
-

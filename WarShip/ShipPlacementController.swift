@@ -27,9 +27,9 @@ class ShipPlacementController : UIViewController {
             gridSize = 9
         }
         if(gameMode == "IA"){
-        var selection :[String] = []
+            var selection: [[String: [String]]] = []
             repeat {
-                let result = chooseRandomCase(gridSize: gridSize)
+                let result = generateShip(gridSize: gridSize)
                 selection.append(result)
             } while selection.count != 2
             print(selection)
