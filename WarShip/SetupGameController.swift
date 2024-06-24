@@ -27,8 +27,8 @@ class SetupGameController: UIViewController{
             "gameMode": gameMode,
             "difficulty":difficulty
         ]
-        var gameScreen = (self.storyboard?.instantiateViewController(withIdentifier: "GameController")) as! ManageGameController
-        gameScreen.gamedata = gameConfig
+        var gameScreen = (self.storyboard?.instantiateViewController(withIdentifier: "shipPlacementController")) as! ShipPlacementController
+        gameScreen.setupGameData = gameConfig
         self.navigationController?.pushViewController(gameScreen, animated:true)
     
     }

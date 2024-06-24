@@ -31,9 +31,15 @@ class ShipPlacementController : UIViewController {
             repeat {
                 let result = chooseRandomCase(gridSize: gridSize)
                 selection.append(result)
-            } while selection.count != 3
-        print(selection)
-        //start Game
+            } while selection.count != 2
+            print(selection)
+        var gameConfig = [
+            "gridSize": gridSize,
+            "ships":selection
+        ] as [String : Any]
+        let gameScreen = (self.storyboard?.instantiateViewController(withIdentifier: "GameViewController")) as! GameViewController
+        gameScreen.setupGameData = gameConfig
+        self.navigationController?.pushViewController(gameScreen, animated:false)
         }else{
             //start selection game
             //creer des button

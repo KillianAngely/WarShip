@@ -14,8 +14,10 @@
 		61246A9F2C12F2B800127EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61246A9E2C12F2B800127EAF /* Assets.xcassets */; };
 		61246AA22C12F2B800127EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61246AA02C12F2B800127EAF /* LaunchScreen.storyboard */; };
 		61246AAA2C12FA4400127EAF /* SetupGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61246AA92C12FA4400127EAF /* SetupGameController.swift */; };
-		61246AAC2C13075C00127EAF /* ManageGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61246AAB2C13075C00127EAF /* ManageGameController.swift */; };
-		61246AAE2C13189500127EAF /* InGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61246AAD2C13189500127EAF /* InGameController.swift */; };
+		612E38722C139F9400C14F97 /* ShipPlacementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E38712C139F9400C14F97 /* ShipPlacementController.swift */; };
+		612E38742C13A3D400C14F97 /* Sbrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612E38732C13A3D400C14F97 /* Sbrain.swift */; };
+		6195FC952C2950320057B903 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6195FC942C2950320057B903 /* GameViewController.swift */; };
+		6195FC972C295DAC0057B903 /* VictoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6195FC962C295DAC0057B903 /* VictoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +30,10 @@
 		61246AA12C12F2B800127EAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61246AA32C12F2B800127EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61246AA92C12FA4400127EAF /* SetupGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupGameController.swift; sourceTree = "<group>"; };
-		61246AAB2C13075C00127EAF /* ManageGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageGameController.swift; sourceTree = "<group>"; };
-		61246AAD2C13189500127EAF /* InGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InGameController.swift; sourceTree = "<group>"; };
+		612E38712C139F9400C14F97 /* ShipPlacementController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipPlacementController.swift; sourceTree = "<group>"; };
+		612E38732C13A3D400C14F97 /* Sbrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sbrain.swift; sourceTree = "<group>"; };
+		6195FC942C2950320057B903 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		6195FC962C295DAC0057B903 /* VictoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VictoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +70,11 @@
 				61246A972C12F2B600127EAF /* SceneDelegate.swift */,
 				61246A992C12F2B600127EAF /* ViewController.swift */,
 				61246A9B2C12F2B600127EAF /* Main.storyboard */,
+				6195FC962C295DAC0057B903 /* VictoryViewController.swift */,
+				612E38732C13A3D400C14F97 /* Sbrain.swift */,
 				61246AA92C12FA4400127EAF /* SetupGameController.swift */,
-				61246AAD2C13189500127EAF /* InGameController.swift */,
-				61246AAB2C13075C00127EAF /* ManageGameController.swift */,
+				612E38712C139F9400C14F97 /* ShipPlacementController.swift */,
+				6195FC942C2950320057B903 /* GameViewController.swift */,
 				61246A9E2C12F2B800127EAF /* Assets.xcassets */,
 				61246AA02C12F2B800127EAF /* LaunchScreen.storyboard */,
 				61246AA32C12F2B800127EAF /* Info.plist */,
@@ -147,10 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61246AAE2C13189500127EAF /* InGameController.swift in Sources */,
+				6195FC952C2950320057B903 /* GameViewController.swift in Sources */,
+				612E38742C13A3D400C14F97 /* Sbrain.swift in Sources */,
 				61246A9A2C12F2B600127EAF /* ViewController.swift in Sources */,
-				61246AAC2C13075C00127EAF /* ManageGameController.swift in Sources */,
 				61246A962C12F2B600127EAF /* AppDelegate.swift in Sources */,
+				612E38722C139F9400C14F97 /* ShipPlacementController.swift in Sources */,
+				6195FC972C295DAC0057B903 /* VictoryViewController.swift in Sources */,
 				61246A982C12F2B600127EAF /* SceneDelegate.swift in Sources */,
 				61246AAA2C12FA4400127EAF /* SetupGameController.swift in Sources */,
 			);
